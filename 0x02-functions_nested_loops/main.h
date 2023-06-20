@@ -5,6 +5,7 @@
  * _islower - function that checks for lowercase character
  * _isalpha - function that checks for alphabetic character
  * _abs - function that computes the absolute value of an integer
+ * print_last_digit - function that prints the last digit of a number
  */
 int _putchar(char c);
 void print_alphabet(void);
@@ -13,3 +14,4 @@ int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
+int print_last_digit(int);
