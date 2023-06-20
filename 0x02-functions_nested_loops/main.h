@@ -8,7 +8,7 @@
  * print_last_digit - function that prints the last digit of a number
  * jack_bauer - function that prints every minute of the day of Jack Bauer
  * times_table - function that prints the 9 times table, starting with 0
- *
+ * add - function that adds two integers and returns the result
  */
 int _putchar(char c);
 void print_alphabet(void);
@@ -20,3 +20,4 @@ int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
+int add(int, int);
