@@ -12,6 +12,7 @@ int _atoi(char *s)
 	unsigned int result = 0;
 	int i = 0;
 	int t = 0;
+	int ot = 1;
 	int len = 0;
 
 	while (s[len] != '\0')
@@ -30,9 +31,12 @@ int _atoi(char *s)
 			result = result * 10 + (s[i] - '0');
 			t = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
+				ot = 0;
 				break;
 			i++;
 		}
+		if (ot == 0)
+			break;
 		i++;
 	}
 	if (t == 0)
