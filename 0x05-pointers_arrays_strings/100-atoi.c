@@ -32,6 +32,7 @@ int _atoi(char *s)
 				e = 0;
 			}
 			i++;
+		}
 	}
 	if (e == 0)
 	{
