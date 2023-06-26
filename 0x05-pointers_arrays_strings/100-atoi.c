@@ -33,17 +33,13 @@ int _atoi(char *s)
 				break;
 			i++;
 		}
-		else
-		{
-			i++;
-		}
+		i++;
 	}
 	if (t == 0)
 	{
 		return (0);
 	}
-	if (sign_count % 2)
+	if (sign_c % 2)
 		sign = -1;
 	return (sign * result);
-
 }
