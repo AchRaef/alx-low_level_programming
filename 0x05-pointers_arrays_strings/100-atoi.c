@@ -43,7 +43,7 @@ int _atoi(char *s)
 	{
 		return (0);
 	}
-	if (sign_c % 2)
+	if (!sign_c % 2)
 		sign = -1;
 	return (sign * result);
 }
