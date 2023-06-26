@@ -42,7 +42,5 @@ int _atoi(char *s)
 		i++;
 	}
 	if (t == 0)
-	{
 		return (0);
-	}
 }
