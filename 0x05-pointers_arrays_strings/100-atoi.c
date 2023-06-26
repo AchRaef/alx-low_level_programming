@@ -35,12 +35,15 @@ int _atoi(char *s)
 		}
 		if (t == 1)
 		{
-			if (sign_c % 2)
-				sign = -1;
-			return (sign * result);
+			break;
 		}
 		i++;
 	}
 	if (t == 0)
+	{
 		return (0);
+	}
+	if (sign_c % 2)
+		sign = -1;
+	return (sign * result);
 }
