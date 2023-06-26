@@ -32,7 +32,7 @@ int _atoi(char *s)
 			{
 				break;
 			}
-			e = 0
+			e = 0;
 		}
 	}
 	i++;
