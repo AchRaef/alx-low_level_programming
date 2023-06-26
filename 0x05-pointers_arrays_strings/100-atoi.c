@@ -11,7 +11,7 @@ int _atoi(char *s)
 	unsigned int result = 0;
 	int i = 0;
 	int len = 0;
-	int e = 0;
+	bool found_number = false;
 
 	while (s[len] != '\0')
 	{
@@ -20,25 +20,20 @@ int _atoi(char *s)
 	while (i < len && e == 0)
 	{
 		if (s[i] == '-')
-		{
 			sign = -1;
 			i++;
-		}
-		if (s[i] >= '0' && s[i] <= '9')
+		if (s[i] == '+')
+			i++;
+		while (s[i] >= '0' && s[i] <= '9')
 		{
 			result = result * 10 + (s[i] - '0');
-			e = 1;
-			if (s[i + 1] < '0' || s[i + 1] > '9')
+			found_number = true;
+			if (!found_number)
 			{
-				break;
+				return (0);
 			}
-		e = 0;
+			i++;
 		}
-	}
-	i++;
-	if (e == 0)
-	{
-		return (0);
 	}
 	return (sign * result);
 }
